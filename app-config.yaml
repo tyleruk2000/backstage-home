@@ -38,10 +38,6 @@ integrations:
       # This is a Personal Access Token or PAT from GitHub. You can find out how to generate this token, and more information
       # about setting up the GitHub integration here: https://backstage.io/docs/integrations/github/locations#configuration
       token: ${GITHUB_TOKEN}
-    ### Example for how to add your GitHub Enterprise instance using the API:
-    # - host: ghe.example.net
-    #   apiBaseUrl: https://ghe.example.net/api/v3
-    #   token: ${GHE_TOKEN}
 
 
 # Reference documentation http://backstage.io/docs/features/techdocs/configuration
@@ -71,10 +67,8 @@ catalog:
   rules:
     - allow: [Component, System, API, Resource, Location]
   locations:
-    # Add your own catalog locations here
-    # Example:
-    # - type: url
-    #   target: https://github.com/your-org/your-repo/blob/main/catalog-info.yaml
+    - type: url
+      target: https://github.com/tyleruk2000/backstage-home/blob/main/catalog-info.yaml
 
 kubernetes:
   # see https://backstage.io/docs/features/kubernetes/configuration for kubernetes configuration options
