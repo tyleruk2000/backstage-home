@@ -70,10 +70,9 @@ catalog:
           branch: 'main' # string
           repository: '.*' # Regex
         schedule: # same options as in SchedulerServiceTaskScheduleDefinition
-          # supports cron, ISO duration, "human duration" as used in code
           frequency: { minutes: 30 }
-          # supports ISO duration, "human duration" as used in code
-          timeout: { minutes: 3 }
+          timeout:   { minutes: 5 }
+          initialDelay: { minutes: 1 }
   import:
     entityFilename: catalog-info.yaml
     pullRequestBranchName: backstage-integration
