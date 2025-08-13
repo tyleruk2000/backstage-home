@@ -72,7 +72,6 @@ catalog:
         schedule: # same options as in SchedulerServiceTaskScheduleDefinition
           frequency: { minutes: 30 }
           timeout:   { minutes: 5 }
-          initialDelay: { minutes: 1 }
   import:
     entityFilename: catalog-info.yaml
     pullRequestBranchName: backstage-integration
